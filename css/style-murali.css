@@ -1,0 +1,142 @@
+@media (max-width: 320px) {
+  .team_btn {
+    padding: 15px 55px;
+    margin: 10px;
+  }
+  .team_btn-active {
+    padding: 15px 100px;
+    margin: 20px;
+    border: none;
+    transition: 0.5s;
+    border: 2px solid #1354ae;
+    color: #1354ae;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.service-card {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.service-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  bottom: 0;
+  left: 15px;
+  width:fit-content;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  overflow: hidden;
+}
+.service-content h5{
+  color: #196ec9;
+}
+.service-inner{
+  width: 100%;
+  height: 40%;
+  border-radius: 20px;
+}
+.service-content:hover  .service-inner{
+  background-color:#007bff6c;
+ 
+}
+#outer{
+  width: 100%;
+}
+.button_slide {
+  color: #FFF;
+  border: 2px solid white;
+  border-radius: 50px;
+  transform: translateY(65px);
+  padding: 14px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #1354ae;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.5s;
+}
+.slide_left:hover {
+  box-shadow: inset 0 0 0 50px #007bff;
+  border: 2px solid transparent;
+  color: black;
+}
+
+.service-content:hover {
+  transform: translatey(-30px);
+}
+
+.service-content:hover .button_slide {
+  transform: translateY(0);
+}
+.card-img{
+  transition: all .8s ease-in-out;
+}
+.service-card:hover .card-img{
+  filter: blur(3px) !important;
+}
+.service-card h5 {
+  width: fit-content;
+  padding: 5px;
+  color: #007bff;
+  transition: all .8s;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 425px) {
+  .service-content {
+    bottom: -0;
+    width: 85%;
+    font-size: 10px;
+    margin-left: 3px !important;
+  }
+  .service-content:hover {
+    transform: translatey(0px);
+  }
+  .button_slide{
+    transform: translateY(0px);
+    padding: 8px 15px;
+    font-size: 10px;
+    margin-bottom:10px;
+
+  }
+}
+
+/* hydrophonics*/
+
+.hydrophonics .para{
+  font-size:16px; 
+}
+.hydro{
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 10px;
+}
+.hydro img{
+  background-position: center;
+  background-size: cover;
+  object-fit:cover;
+}
+@media (max-width:600px) {
+  .hydrophonics .para{
+    font-size:18px; 
+  }
+}
+/* prototype*/
+.proto{
+  border: 3px solid black;
+  background-color: #eff0f0;
+}
+/* event page*/
+.event-content{
+  font-size: 20px;
+}
